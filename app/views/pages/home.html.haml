@@ -1,13 +1,5 @@
-/ Warming Up
-%link{:href => "http://fonts.googleapis.com/css?family=Buenard:700", :rel => "stylesheet", :type => "text/css"}
-  %script{:src => "http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"}
-  / Video Section
-  %section.content-section.video-section
-    .pattern-overlay
-      %a#bgndVideo.player{"data-property" => "{videoURL:'https://www.youtube.com/watch?v=fdJc1_IBKJA',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}"} bg
-      .container
-        .row
-          .col-lg-12
-            %h1 Full Width Video
-            %h3 Enjoy Adding Full Screen Videos to your Page Sections
-  / Video Section Ends Here
+#bg_container
+  %iframe#vid_background{:frameborder => "0", :src => "//www.youtube.com/embed/qREKP9oijWI?start=300&amp;autoplay=1&amp;controls=0&amp;loop=1&amp;showinfo=0&amp;modestbranding=1&amp;disablekb=1&amp;enablejsapi=1&amp;playlist=PLAYLIST_ID_HERE"}
+#content
+  %h1 Web page with HD looping video background
+  %h2 Using CSS the video is simply placed underneath our HTML content
